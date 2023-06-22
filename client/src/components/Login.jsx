@@ -42,9 +42,9 @@ const Login = ()=>{
                  <button className="loginButton">Log in</button>
                  <p style={{ textAlign: "center", marginTop: "30px" }}>
                     Don't have an account? { " " }
-                    <link className="link" to="register">
+                    <Link className="link" to="register">
                     create one
-                    </link>
+                    </Link>
                  </p>
             </form>
         </main>

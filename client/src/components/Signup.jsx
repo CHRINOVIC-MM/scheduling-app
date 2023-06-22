@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { handleRegister } from "../utils/ressource";
+// import { handleRegister } from "../utils/ressources";
 
 const Signup=()=>{
     const [username, setUsername] = useState("");
@@ -55,9 +55,9 @@ const Signup=()=>{
                 <button className="signupButton">Register</button>
                 <p style={{textAlign: "center", marginTop: "30px"}}>
                     Already have an account?{" "}
-                    <link className="link" to="/">
+                    <Link className="link" to="/">
                         Sign in
-                    </link>
+                    </Link>
                 </p>
             </form>
         </main>
