@@ -38,6 +38,13 @@ const Dashboard = () => {
             toast.error("Select your timezone");
         }
     };
+
+    useEffect(() => {
+        if (!localStorage.getItem("_id")) {
+            navigate("/");
+        }
+    }, [navigate]);
+    
     return (
         <div>
             <nav className='dashboard__nav'>
